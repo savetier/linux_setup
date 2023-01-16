@@ -37,6 +37,12 @@ Force end of session with (Ctrl + Alt + Backspace)
 
 ```sudo systemctl enable org.cups.cupsd.service```
 
+## Initiate E-Card-Reader
+
+```sudo systemctl start pcscd.service```
+
+```sudo systemctl enable pcscd.service```
+
 
 ## Essential Programs
 
