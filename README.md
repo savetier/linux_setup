@@ -43,6 +43,12 @@ Force end of session with (Ctrl + Alt + Backspace)
 
 ```sudo systemctl enable pcscd.service```
 
+## Inject Spatial Metadata for 360° Videos
+
+```pamac install perl-image-exiftool```
+
+```exiftool -XMP-GSpherical:Spherical="true" video.mp4```
+
 
 ## Essential Programs
 
