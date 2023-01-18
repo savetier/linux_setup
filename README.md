@@ -1,5 +1,5 @@
 # Linux Setup
-My personal modifications for Manjaro and Ubuntu
+My personal modifications for Manjaro and Ubuntu, and some essential commands
 
 ## Replace CapsLock with Backspace
 
@@ -42,6 +42,10 @@ Force end of session with (Ctrl + Alt + Backspace)
 ```sudo systemctl start pcscd.service```
 
 ```sudo systemctl enable pcscd.service```
+
+## Tesseract Fraktur
+
+tesseract page1.tif page1 -l deu_frak
 
 ## Inject Spatial Metadata for 360° Videos
 
