@@ -53,9 +53,13 @@ Force end of session with (Ctrl + Alt + Backspace)
 
 ```exiftool -XMP-GSpherical:Spherical="true" video.mp4```
 
+## Reduce Swappiness
+
+```sudo echo "vm.swappiness=10" > /etc/sysctl.d/100-manjaro.conf```
+
 
 ## Essential Programs
 
-```pamac install vivaldi brave-browser nextcloud-client thunar bitwarden libreoffice-fresh smplayer qmmp mixxx gimp inkscape steam evince scrcpy pavucontrol clamtk audacity plasma-vault gocryptfs telegram-desktop tuxedo-control-center mediathekview libappindicator-gtk3 gnome-shell-extension-appindicator```
+```pamac install hunspell-deatvivaldi brave-browser nextcloud-client thunar bitwarden libreoffice-fresh smplayer qmmp mixxx gimp inkscape steam evince scrcpy pavucontrol clamtk audacity plasma-vault gocryptfs telegram-desktop tuxedo-control-center mediathekview libappindicator-gtk3 gnome-shell-extension-appindicator```
 
-```pamac build protonvpn authy freetube puddletag avidemux-qt ffmpegthumbnailer rainlendar-pro```
+```pamac build protonvpn authy freetube puddletag avidemux-qt ffmpegthumbnailer rainlendar-pro peazip-qt-bin```
