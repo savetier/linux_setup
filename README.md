@@ -45,7 +45,7 @@ Force end of session with (Ctrl + Alt + Backspace)
 
 ## Tesseract Fraktur
 
-tesseract page1.tif page1 -l deu_frak
+```tesseract page1.tif page1 -l deu_frak```
 
 ## Inject Spatial Metadata for 360° Videos
 
