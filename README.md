@@ -73,16 +73,23 @@ Path:
 plasmavaultrc:
 
 ```[/home/$USER/.vaults/Data.enc]```
+
 ```activities=```
+
 ```backend=gocryptfs```
+
 ```mountPoint=/home/$USER/Vaults/Data```
+
 ```name=Data```
+
 ```offlineOnly=false```
 
 ```[EncryptedDevices]```
+
 ```/home/$USER/.vaults/Data.enc=true```
 
 ```[UI-notice]```
+
 ```SkipNotice-gocryptfs-message=false```
 
 
