@@ -63,3 +63,29 @@ Force end of session with (Ctrl + Alt + Backspace)
 ```pamac install hunspell-deatvivaldi brave-browser nextcloud-client thunar bitwarden libreoffice-fresh smplayer qmmp mixxx gimp inkscape steam evince scrcpy pavucontrol clamtk audacity plasma-vault gocryptfs telegram-desktop tuxedo-control-center mediathekview libappindicator-gtk3 gnome-shell-extension-appindicator```
 
 ```pamac build protonvpn authy freetube puddletag avidemux-qt ffmpegthumbnailer rainlendar-pro peazip-qt-bin```
+
+## Plasma-Vaults
+
+Path:
+
+```/home/$USER/.config/plasmavaultrc```
+
+plasmavaultrc:
+
+```[/home/$USER/.vaults/Data.enc]
+activities=
+backend=gocryptfs
+lastError=Unknown device (code: 1)
+lastStatus=2
+mountPoint=/home/$USER/Vaults/Data
+name=Data
+offlineOnly=false
+
+[EncryptedDevices]
+/home/$USER/.vaults/Data.enc=true
+
+[UI-notice]
+SkipNotice-gocryptfs-message=false```
+
+
+
