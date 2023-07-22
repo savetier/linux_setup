@@ -60,7 +60,7 @@ Force end of session with (Ctrl + Alt + Backspace)
 
 ## Essential Programs
 
-```pamac install hunspell-deatvivaldi brave-browser nextcloud-client thunar bitwarden libreoffice-fresh smplayer qmmp mixxx gimp inkscape steam evince scrcpy pavucontrol clamtk audacity plasma-vault gocryptfs telegram-desktop tuxedo-control-center mediathekview libappindicator-gtk3 gnome-shell-extension-appindicator qimgv```
+```pamac install hunspell-deatvivaldi brave-browser nextcloud-client thunar bitwarden libreoffice-fresh smplayer qmmp mixxx gimp inkscape steam evince scrcpy pavucontrol clamtk audacity plasma-vault gocryptfs telegram-desktop tuxedo-control-center mediathekview libappindicator-gtk3 gnome-shell-extension-appindicator qimgv converseen```
 
 ```pamac build protonvpn authy freetube puddletag avidemux-qt ffmpegthumbnailer rainlendar-pro peazip-qt-bin```
 
