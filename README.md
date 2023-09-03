@@ -19,6 +19,12 @@ Force end of session with (Ctrl + Alt + Backspace)
 
 ```pamac install gufw```  // ```sudo apt install gufw```
 
+## Flash TWRP to Phone/Tablet
+```heimdall detect```
+```heimdall flash --RECOVERY recovery.img```
+
+Immediately press the buttons to enter recovery mode, else TWRP will be overwritten.
+
 ## Nikon as Webcam
 
 ```pamac install v4l2loopback-dkms gphoto2```
@@ -91,6 +97,8 @@ plasmavaultrc:
 ```[UI-notice]```
 
 ```SkipNotice-gocryptfs-message=false```
+
+
 
 
 
