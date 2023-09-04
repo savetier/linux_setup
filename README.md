@@ -99,6 +99,12 @@ plasmavaultrc:
 ```SkipNotice-gocryptfs-message=false```
 
 
+## Wipe Filesystem with Zeros
 
+HDD only!
 
-
+```dd if=/dev/zero of=zero.small.file bs=1024 count=102400```
+```cat /dev/zero > zero.file```
+```sync```
+```rm zero.small.file```
+```rm zero.file```
