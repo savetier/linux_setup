@@ -27,11 +27,15 @@ Immediately press the buttons to enter recovery mode, else TWRP will be overwrit
 
 ## GPT Partition Table
 
-Mountpoint -- Flag -- Filesystem
-/boot/efi -- boot -- FAT32
-Swap -- swap -- linuxswap
-/ -- root -- brfs
-/home -- btrfs -- 0
+```Mountpoint -- Flag -- Filesystem```
+
+```/boot/efi -- boot -- FAT32```
+
+```Swap -- swap -- linuxswap```
+
+```/ -- root -- brfs```
+
+```/home -- btrfs -- 0```
 
 
 
