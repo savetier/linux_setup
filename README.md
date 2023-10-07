@@ -25,6 +25,16 @@ Force end of session with (Ctrl + Alt + Backspace)
 
 Immediately press the buttons to enter recovery mode, else TWRP will be overwritten.
 
+## GPT Partition Table
+
+Mountpoint -- Flag -- Filesystem
+/boot/efi -- boot -- FAT32
+Swap -- swap -- linuxswap
+/ -- root -- brfs
+/home -- btrfs -- 0
+
+
+
 ## Nikon as Webcam
 
 ```pamac install v4l2loopback-dkms gphoto2```
