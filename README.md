@@ -11,7 +11,7 @@ Mountpoint -- Flag -- Filesystem
 
 ```/ -- root -- brfs```
 
-```/home -- btrfs -- 0```
+```/home -- 0 -- btrfs```
 
 
 ## Replace CapsLock with Backspace
