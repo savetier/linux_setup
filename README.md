@@ -1,9 +1,11 @@
 # Linux Setup
-My personal modifications for Manjaro and Ubuntu, and some essential commands
+Some essential commands for Manjaro and Ubutnu
+
 
 ## Replace CapsLock with Backspace
 
 ```setxkbmap -option caps:backspace -option shift:both_capslock```
+
 
 ## Activate 'Hand Break'
 
@@ -13,17 +15,13 @@ Force end of session with (Ctrl + Alt + Backspace)
 
 ```XKBOPTIONS="terminate:ctrl_alt_bksp"```
 
+
 ## Enable the Firewall
 
 ```sudo ufw enable```
 
 ```pamac install gufw```  // ```sudo apt install gufw```
 
-## Flash TWRP to Phone/Tablet
-```heimdall detect```
-```heimdall flash --RECOVERY recovery.img```
-
-Immediately press the buttons to enter recovery mode, else TWRP will be overwritten.
 
 ## GPT Partition Table
 
@@ -38,7 +36,6 @@ Immediately press the buttons to enter recovery mode, else TWRP will be overwrit
 ```/home -- btrfs -- 0```
 
 
-
 ## Nikon as Webcam
 
 ```pamac install v4l2loopback-dkms gphoto2```
@@ -49,6 +46,7 @@ Immediately press the buttons to enter recovery mode, else TWRP will be overwrit
 
 ```gphoto2 --stdout --capture-movie | gst-launch-1.0 fdsrc fd=0 ! decodebin name=dec ! queue ! videoconvert ! tee ! v4l2sink device=/dev/video0```
 
+
 ## Install Printer Driver for Brother MFC295CN
 
 ```pamac build brother-mfc-290c```
@@ -57,21 +55,25 @@ Immediately press the buttons to enter recovery mode, else TWRP will be overwrit
 
 ```sudo systemctl enable org.cups.cupsd.service```
 
+
 ## Initiate E-Card-Reader
 
 ```sudo systemctl start pcscd.service```
 
 ```sudo systemctl enable pcscd.service```
 
+
 ## Tesseract Fraktur
 
 ```tesseract page1.tif page1 -l deu_frak```
+
 
 ## Inject Spatial Metadata for 360° Videos
 
 ```pamac install perl-image-exiftool```
 
 ```exiftool -XMP-GSpherical:Spherical="true" video.mp4```
+
 
 ## Reduce Swappiness
 
@@ -83,6 +85,7 @@ Immediately press the buttons to enter recovery mode, else TWRP will be overwrit
 ```pamac install vivaldi brave-browser nextcloud-client thunar smplayer qmmp mixxx gimp inkscape steam evince scrcpy pavucontrol clamtk audacity plasma-vault gocryptfs telegram-desktop tuxedo-control-center mediathekview libappindicator-gtk3 gnome-shell-extension-appindicator converseen base-devel```
 
 ```pamac build qimgv protonvpn puddletag avidemux-qt ffmpegthumbnailer rainlendar-pro peazip-qt-bin linux-wifi-hotspot```
+
 
 ## Plasma-Vaults
 
@@ -122,3 +125,8 @@ HDD only!
 ```sync```
 ```rm zero.small.file```
 ```rm zero.file```
+
+## Write Image on Disk with dd
+
+```sudo dd if=image.iso of=/dev/sd* bs=1024k status=progress```
+
