@@ -1,6 +1,18 @@
 # Linux Setup
 Some essential commands for Manjaro and Ubutnu
 
+## GPT Partition Table
+
+Mountpoint -- Flag -- Filesystem
+
+```/boot/efi -- boot -- FAT32```
+
+```Swap -- swap -- linuxswap```
+
+```/ -- root -- brfs```
+
+```/home -- btrfs -- 0```
+
 
 ## Replace CapsLock with Backspace
 
@@ -23,30 +35,6 @@ Force end of session with (Ctrl + Alt + Backspace)
 ```pamac install gufw```  // ```sudo apt install gufw```
 
 
-## GPT Partition Table
-
-```Mountpoint -- Flag -- Filesystem```
-
-```/boot/efi -- boot -- FAT32```
-
-```Swap -- swap -- linuxswap```
-
-```/ -- root -- brfs```
-
-```/home -- btrfs -- 0```
-
-
-## Nikon as Webcam
-
-```pamac install v4l2loopback-dkms gphoto2```
-
-```sudo apt install entangle linux-generic v4l2loopback-dkms gphoto2```
-
-```sudo modprobe v4l2loopback```
-
-```gphoto2 --stdout --capture-movie | gst-launch-1.0 fdsrc fd=0 ! decodebin name=dec ! queue ! videoconvert ! tee ! v4l2sink device=/dev/video0```
-
-
 ## Install Printer Driver for Brother MFC295CN
 
 ```pamac build brother-mfc-290c```
@@ -54,6 +42,18 @@ Force end of session with (Ctrl + Alt + Backspace)
 ```sudo pacman -S cups manjaro-printer```
 
 ```sudo systemctl enable org.cups.cupsd.service```
+
+
+## Reduce Swappiness
+
+```sudo echo "vm.swappiness=10" > /etc/sysctl.d/100-manjaro.conf```
+
+
+## Essential Programs
+
+```pamac install tvtime testdisk vivaldi brave-browser nextcloud-client thunar smplayer qmmp mixxx gimp inkscape steam evince scrcpy pavucontrol clamtk audacity plasma-vault gocryptfs telegram-desktop tuxedo-control-center mediathekview libappindicator-gtk3 gnome-shell-extension-appindicator converseen base-devel```
+
+```pamac build qimgv protonvpn puddletag avidemux-qt ffmpegthumbnailer rainlendar-pro peazip-qt-bin linux-wifi-hotspot```
 
 
 ## Initiate E-Card-Reader
@@ -68,23 +68,22 @@ Force end of session with (Ctrl + Alt + Backspace)
 ```tesseract page1.tif page1 -l deu_frak```
 
 
+## Nikon as Webcam
+
+```pamac install v4l2loopback-dkms gphoto2```
+
+```sudo apt install entangle linux-generic v4l2loopback-dkms gphoto2```
+
+```sudo modprobe v4l2loopback```
+
+```gphoto2 --stdout --capture-movie | gst-launch-1.0 fdsrc fd=0 ! decodebin name=dec ! queue ! videoconvert ! tee ! v4l2sink device=/dev/video0```
+
+
 ## Inject Spatial Metadata for 360° Videos
 
 ```pamac install perl-image-exiftool```
 
 ```exiftool -XMP-GSpherical:Spherical="true" video.mp4```
-
-
-## Reduce Swappiness
-
-```sudo echo "vm.swappiness=10" > /etc/sysctl.d/100-manjaro.conf```
-
-
-## Essential Programs
-
-```pamac install vivaldi brave-browser nextcloud-client thunar smplayer qmmp mixxx gimp inkscape steam evince scrcpy pavucontrol clamtk audacity plasma-vault gocryptfs telegram-desktop tuxedo-control-center mediathekview libappindicator-gtk3 gnome-shell-extension-appindicator converseen base-devel```
-
-```pamac build qimgv protonvpn puddletag avidemux-qt ffmpegthumbnailer rainlendar-pro peazip-qt-bin linux-wifi-hotspot```
 
 
 ## Plasma-Vaults
@@ -121,10 +120,15 @@ plasmavaultrc:
 HDD only!
 
 ```dd if=/dev/zero of=zero.small.file bs=1024 count=102400```
+
 ```cat /dev/zero > zero.file```
+
 ```sync```
+
 ```rm zero.small.file```
+
 ```rm zero.file```
+
 
 ## Write Image on Disk with dd
 
