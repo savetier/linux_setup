@@ -67,6 +67,10 @@ Force end of session with (Ctrl + Alt + Backspace)
 
 ```tesseract page1.tif page1 -l deu_frak```
 
+## Convert PDF to Images
+
+```pdftoppm -jpeg -r 300 Document.pdf page```
+
 
 ## Nikon as Webcam
 
