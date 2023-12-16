@@ -18,6 +18,7 @@ Mountpoint -- Flag -- Filesystem
 
 ```setxkbmap -option caps:backspace -option shift:both_capslock```
 
+Can be done in Plasma in System Settings > Keyboard > Advanced
 
 ## Activate 'Hand Break'
 
@@ -27,6 +28,7 @@ Force end of session with (Ctrl + Alt + Backspace)
 
 ```XKBOPTIONS="terminate:ctrl_alt_bksp"```
 
+Can be done in Plasma in System Settings > Keyboard > Advanced
 
 ## Enable the Firewall
 
@@ -51,9 +53,9 @@ Force end of session with (Ctrl + Alt + Backspace)
 
 ## Essential Programs
 
-```pamac install tvtime testdisk vivaldi brave-browser nextcloud-client thunar smplayer qmmp mixxx gimp inkscape steam evince scrcpy pavucontrol clamtk audacity plasma-vault gocryptfs telegram-desktop tuxedo-control-center mediathekview libappindicator-gtk3 gnome-shell-extension-appindicator converseen base-devel```
+```pamac install btrfs-progs btrfsmaintenance exfat-utils tvtime testdisk vivaldi brave-browser nextcloud-client thunar smplayer qmmp mixxx gimp inkscape steam evince scrcpy pavucontrol clamtk audacity plasma-vault gocryptfs telegram-desktop tuxedo-control-center mediathekview libappindicator-gtk3 gnome-shell-extension-appindicator converseen base-devel zpaq pdfarranger testdisk persepolis gnome-disk-utility gparted```
 
-```pamac build qimgv protonvpn puddletag avidemux-qt ffmpegthumbnailer rainlendar-pro peazip-qt-bin linux-wifi-hotspot```
+```pamac build qimgv protonvpn puddletag avidemux-qt ffmpegthumbnailer rainlendar-pro peazip-qt-bin linux-wifi-hotspot kdrive-bin cover-thumbnailer```
 
 
 ## Initiate E-Card-Reader
@@ -133,8 +135,14 @@ HDD only!
 
 ```rm zero.file```
 
-
 ## Write Image on Disk with dd
 
 ```sudo dd if=image.iso of=/dev/sd* bs=1024k status=progress```
 
+## Restart Plasma-Shell
+
+```plasmashell --replace & ```
+
+## Re-Initialise Font-Cache
+
+```sudo fc-cache -f -v```
