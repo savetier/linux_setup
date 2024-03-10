@@ -146,3 +146,11 @@ HDD only!
 ## Re-Initialise Font-Cache
 
 ```sudo fc-cache -f -v```
+
+## Merge Textfiles
+
+```cat *.txt > all.txt```
+
+## Remove Title from MKV-File
+
+```mkvpropedit "Film.mkv" --tags all: ```
