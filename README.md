@@ -1,5 +1,5 @@
 # Linux Setup
-Some essential commands for Manjaro and Ubutnu
+Some essential commands for Manjaro
 
 
 ## Replace CapsLock with Backspace
@@ -22,7 +22,7 @@ Can be done in Plasma in System Settings > Keyboard > Advanced
 
 ```sudo ufw enable```
 
-```pamac install gufw```  // ```sudo apt install gufw```
+```pamac install gufw```
 
 
 ## Install Printer Driver for Brother MFC295CN
@@ -41,7 +41,7 @@ Can be done in Plasma in System Settings > Keyboard > Advanced
 
 ## Essential Programs
 
-```pamac install btrfs-progs btrfsmaintenance exfat-utils tvtime testdisk vivaldi brave-browser nextcloud-client thunar smplayer qmmp mixxx gimp inkscape steam evince scrcpy pavucontrol clamtk audacity plasma-vault gocryptfs telegram-desktop tuxedo-control-center mediathekview libappindicator-gtk3 gnome-shell-extension-appindicator converseen base-devel zpaq pdfarranger testdisk persepolis gnome-disk-utility gparted```
+```pamac install btrfs-progs btrfsmaintenance exfat-utils tvtime testdisk vivaldi brave-browser nextcloud-client thunar smplayer qmmp mixxx gimp inkscape steam evince scrcpy pavucontrol clamtk audacity plasma-vault gocryptfs telegram-desktop tuxedo-control-center mediathekview libappindicator-gtk3 gnome-shell-extension-appindicator converseen base-devel pdfarranger persepolis gnome-disk-utility gparted```
 
 ```pamac build qimgv protonvpn puddletag avidemux-qt ffmpegthumbnailer rainlendar-pro peazip-qt-bin linux-wifi-hotspot kdrive-bin cover-thumbnailer```
 
