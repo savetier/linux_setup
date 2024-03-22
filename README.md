@@ -1,18 +1,6 @@
 # Linux Setup
 Some essential commands for Manjaro and Ubutnu
 
-## GPT Partition Table
-
-Mountpoint -- Flag -- Filesystem
-
-```/boot/efi -- boot -- FAT32```
-
-```Swap -- swap -- linuxswap```
-
-```/ -- root -- brfs```
-
-```/home -- 0 -- btrfs```
-
 
 ## Replace CapsLock with Backspace
 
@@ -146,6 +134,30 @@ HDD only!
 ## Re-Initialise Font-Cache
 
 ```sudo fc-cache -f -v```
+
+## Cleaning
+
+Clean Cache
+
+```sudo pacman -Sc```
+
+```sudo pacman -Qdt```
+
+```sudo pacman -Rns $(pacman -Qtdq)```
+
+Vacuum Journals
+
+```journalctl --disk-usage```
+
+```sudo journalctl --vacuum-size=50M```
+
+Remove orphaned libraries
+
+```pamac remove --orphans```
+
+Clean cache
+
+```pamac clean --build-files```
 
 ## Merge Textfiles
 
