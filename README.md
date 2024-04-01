@@ -39,6 +39,24 @@ Can be done in Plasma in System Settings > Keyboard > Advanced
 ```sudo echo "vm.swappiness=10" > /etc/sysctl.d/100-manjaro.conf```
 
 
+## Activate apparmor
+
+```pamac install apparmor```
+
+```systemctl enable apparmor.service```
+
+```systemctl status apparmor```
+
+Boot with apparmor activated:
+
+```kate /etc/default/grub```
+
+-> add ```apparmor=1 security=apparmor``` to ```GRUB_CMDLINE_LINUX_DEFAULT```
+
+```sudo update-grub```
+
+```aa-enabled```
+
 ## Essential Programs
 
 ```pamac install btrfs-progs btrfsmaintenance exfat-utils tvtime testdisk vivaldi brave-browser nextcloud-client thunar smplayer qmmp mixxx gimp inkscape steam evince scrcpy pavucontrol clamtk audacity plasma-vault gocryptfs telegram-desktop tuxedo-control-center mediathekview libappindicator-gtk3 gnome-shell-extension-appindicator converseen base-devel pdfarranger persepolis gnome-disk-utility gparted```
