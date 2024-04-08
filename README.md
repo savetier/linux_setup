@@ -184,3 +184,20 @@ Clean cache
 ## Remove Title from MKV-File
 
 ```mkvpropedit "Film.mkv" --tags all: ```
+
+## Set up Jellyfin-Server
+
+```pamac install jellyfin-server```
+
+```pamac install jellyfin-web```
+
+```sudo systemctl start jellyfin.service```
+
+```sudo systemctl enable jellyfin.service```
+
+```sudo find /jellyfin -type d -exec chmod 2755 {} \;```
+
+```sudo find /jellyfin -type f -exec chmod 0644 {} \;```
+
+```http://localhost:8096```
+
