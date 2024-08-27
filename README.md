@@ -59,9 +59,18 @@ Boot with apparmor activated:
 
 ## Essential Programs
 
-```pamac install btrfs-progs btrfsmaintenance exfat-utils tvtime testdisk vivaldi brave-browser nextcloud-client thunar smplayer qmmp mixxx gimp inkscape steam evince scrcpy pavucontrol clamtk audacity plasma-vault gocryptfs telegram-desktop tuxedo-control-center mediathekview libappindicator-gtk3 gnome-shell-extension-appindicator converseen base-devel pdfarranger persepolis gnome-disk-utility gparted```
+```pamac install base-devel btrfs-progs btrfsmaintenance exfat-utils tvtime testdisk tesseract thunar xfce4-taskmanager mkvtoolnix-gui vym vivaldi brave-browser nextcloud-client smplayer qmmp gimp inkscape steam evince scrcpy pavucontrol audacity plasma-firewall gufw plasma-vault gocryptfs telegram-desktop tuxedo-control-center libappindicator-gtk3 gnome-shell-extension-appindicator converseen pdfarranger gnome-disk-utility gparted clamtk mediathekview avidemux-qt ffmpegthumbnailer bleachbit vulkan-radeon lib32-vulkan-radeon libreoffice-fresh```
 
-```pamac build qimgv protonvpn puddletag avidemux-qt ffmpegthumbnailer rainlendar-pro peazip-qt-bin linux-wifi-hotspot kdrive-bin cover-thumbnailer```
+```pamac build freetube qimgv puddletag rainlendar-pro peazip-qt-bin linux-wifi-hotspot cover-thumbnailer proton-vpn-gtk-app espanso qmplay2```
+
+```sudo pacman -S --needed mesa-demos vulkan-tools```
+
+
+## If proton-vpn-gtk-app doesn't work on Manjaro - rebuild it
+
+```pamac remove proton-vpn-gtk-app python-proton-core python-proton-keyring-linux python-proton-keyring-linux-secretservice python-proton-vpn-api-core python-proton-vpn-killswitch-network-manager python-proton-vpn-killswitch-network-manager-wireguard python-proton-vpn-logger python-proton-vpn-network-manager python-proton-vpn-network-manager-openvpn python-proton-vpn-network-manager-wireguard```
+
+```pamac build proton-vpn-gtk-app```
 
 
 ## Initiate E-Card-Reader
