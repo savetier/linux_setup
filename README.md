@@ -59,7 +59,7 @@ Boot with apparmor activated:
 
 ## Essential Programs
 
-```pamac install base-devel btrfs-progs btrfsmaintenance exfat-utils tvtime testdisk tesseract thunar xfce4-taskmanager mkvtoolnix-gui vym vivaldi brave-browser nextcloud-client smplayer qmmp gimp inkscape steam evince scrcpy pavucontrol audacity plasma-firewall gufw plasma-vault gocryptfs telegram-desktop tuxedo-control-center libappindicator-gtk3 gnome-shell-extension-appindicator converseen pdfarranger gnome-disk-utility gparted clamtk mediathekview avidemux-qt ffmpegthumbnailer bleachbit vulkan-radeon lib32-vulkan-radeon libreoffice-fresh```
+```pamac install base-devel btrfs-progs btrfsmaintenance exfat-utils tvtime testdisk tesseract thunar xfce4-taskmanager mkvtoolnix-gui vym vivaldi brave-browser nextcloud-client smplayer qmmp gimp inkscape steam evince scrcpy pavucontrol audacity plasma-firewall gufw plasma-vault gocryptfs telegram-desktop tuxedo-control-center libappindicator-gtk3 gnome-shell-extension-appindicator converseen pdfarranger gnome-disk-utility gparted clamtk mediathekview avidemux-qt ffmpegthumbnailer bleachbit vulkan-radeon lib32-vulkan-radeon libreoffice-fresh zotero wine-staging zpaq```
 
 ```pamac build freetube qimgv puddletag rainlendar-pro peazip-qt-bin linux-wifi-hotspot cover-thumbnailer proton-vpn-gtk-app espanso qmplay2```
 
