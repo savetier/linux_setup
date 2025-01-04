@@ -27,7 +27,7 @@ Can be done in Plasma in System Settings > Keyboard > Advanced
 
 ## Install Printer Driver for Brother MFC295CN
 
-```pamac build brother-mfc-290c```
+```pamac build brother-mfc-290c brscan3```
 
 ```sudo pacman -S cups manjaro-printer```
 
@@ -59,9 +59,9 @@ Boot with apparmor activated:
 
 ## Essential Programs
 
-```pamac install base-devel btrfs-progs btrfsmaintenance exfat-utils tvtime testdisk tesseract thunar xfce4-taskmanager mkvtoolnix-gui vym vivaldi brave-browser nextcloud-client smplayer qmmp gimp inkscape steam evince scrcpy pavucontrol audacity plasma-firewall gufw plasma-vault gocryptfs telegram-desktop tuxedo-control-center libappindicator-gtk3 gnome-shell-extension-appindicator converseen pdfarranger gnome-disk-utility gparted clamtk mediathekview avidemux-qt ffmpegthumbnailer bleachbit vulkan-radeon lib32-vulkan-radeon libreoffice-fresh zotero wine-staging zpaq scummvm```
+```pamac install base-devel btrfs-progs btrfsmaintenance tvtime testdisk tesseract thunar xfce4-taskmanager mkvtoolnix-gui vym vivaldi brave-browser nextcloud-client smplayer qmmp gimp inkscape steam evince scrcpy pavucontrol audacity plasma-firewall gufw plasma-vault gocryptfs telegram-desktop tuxedo-control-center libappindicator-gtk3 gnome-shell-extension-appindicator converseen pdfarranger gnome-disk-utility gparted clamtk mediathekview avidemux-qt ffmpegthumbnailer bleachbit vulkan-radeon lib32-vulkan-radeon libreoffice-fresh zotero wine-staging zpaq scummvm```
 
-```pamac build freetube qimgv puddletag rainlendar-pro peazip-qt-bin linux-wifi-hotspot cover-thumbnailer proton-vpn-gtk-app espanso qmplay2```
+```pamac build joplin-appimage freetube qimgv puddletag rainlendar-pro linux-wifi-hotspot cover-thumbnailer protonvpn-cli-community proton-mail-bin espanso qmplay2```
 
 ```sudo pacman -S --needed mesa-demos vulkan-tools```
 
