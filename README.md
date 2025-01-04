@@ -210,3 +210,4 @@ Clean cache
 
 ```http://localhost:8096```
 
+```sudo chown -R jellyfin: /etc/jellyfin /var/lib/jellyfin /var/log/jellyfin /var/cache/jellyfin /usr/share/jellyfin```
