@@ -211,3 +211,34 @@ Clean cache
 ```http://localhost:8096```
 
 ```sudo chown -R jellyfin: /etc/jellyfin /var/lib/jellyfin /var/log/jellyfin /var/cache/jellyfin /usr/share/jellyfin```
+
+## Switching to zsh shell
+
+
+```sudo pacman -Sy zsh```
+
+```sudo pacman -S zsh-autosuggestions zsh-syntax-highlighting zsh-completions zsh-theme-powerlevel10k```
+
+```chsh -s /usr/bin/zsh```
+
+Add to .zshrc
+
+```autoload -U compinit promptinit```
+
+```promptinit```
+```prompt pure```
+
+```compinit```
+
+```source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh```
+
+```source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh```
+
+```source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme```
+
+Start zsh and edit theme
+
+Restart System
+
+```rehash```
+
