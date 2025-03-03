@@ -246,3 +246,8 @@ Restart System
 
 ```rehash```
 
+Or:
+
+Get .zshrc from Grml:
+
+```wget -O ~/.zshrc https://raw.githubusercontent.com/grml/grml-etc-core/master/etc/zsh/zshrc``` 
