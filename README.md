@@ -236,6 +236,10 @@ Add to .zshrc
 
 ```source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme```
 
+```# History file for zsh```
+
+```HISTFILE=~/.zsh_history```
+
 Start zsh and edit theme
 
 Restart System
