@@ -1,5 +1,5 @@
 # Linux Setup
-Some essential commands for Manjaro
+Some essential commands for Manjaro and EndeavourOS
 
 
 ## Replace CapsLock with Backspace
@@ -24,6 +24,17 @@ Can be done in Plasma in System Settings > Keyboard > Advanced
 
 ```pamac install gufw```
 
+## Allow Wifi-Hotspot through Firewall (ufw)
+
+```sudo ufw allow to any port 53```
+
+```sudo ufw allow to any port 67 proto udp```
+
+```sudo ufw allow to any port 68 proto udp```
+
+```sudo ufw allow udp 5353```
+
+```sudo ufw allow bootps```
 
 ## Install Printer Driver for Brother MFC295CN
 
