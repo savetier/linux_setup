@@ -40,9 +40,13 @@ Can be done in Plasma in System Settings > Keyboard > Advanced
 
 ```pamac build brother-mfc-290c brscan3```
 
-```sudo pacman -S cups manjaro-printer```
+```sudo pacman -S cups```
 
-```sudo systemctl enable org.cups.cupsd.service```
+```sudo systemctl enable --now cups```
+
+```sudo usermod -aG lp username```
+
+```sudo pacman -S system-config-printer```
 
 
 ## Reduce Swappiness
