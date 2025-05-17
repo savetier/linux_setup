@@ -266,3 +266,17 @@ Or:
 Get .zshrc from Grml:
 
 ```wget -O ~/.zshrc https://raw.githubusercontent.com/grml/grml-etc-core/master/etc/zsh/zshrc``` 
+
+## Stop Nextcloud-Client from Popping up Randomly
+
+```mkdir -p .local/share/dbus-1/services/```
+
+```touch .local/share/dbus-1/services/com.nextcloudgmbh.Nextcloud.service```
+
+Add the follwing to the file:
+
+```[D-BUS Service]```
+
+```Name=com.nextcloudgmbh.Nextcloud```
+
+```Exec=/bin/false```
