@@ -280,3 +280,21 @@ Add the follwing to the file:
 ```Name=com.nextcloudgmbh.Nextcloud```
 
 ```Exec=/bin/false```
+
+## Install and use Stylometry with R
+
+```R```
+
+```install.packages("stylo")```
+
+```library(stylo)```
+
+```setwd("path")```
+
+```stylo()```
+
+Folder needs subfolder named "corpus" where the text-files are located.
+
+https://computationalstylistics.github.io/stylo_nutshell/#functions-imposters
+
+https://pittsburgh-neh-institute.github.io/Institute-Materials-2017/schedule/week_2/02-stylo.pdf
